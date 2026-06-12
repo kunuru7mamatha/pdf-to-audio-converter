@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF to Audio Converter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>📄 PDF to Audio Converter 🎧</h1>
+        <p>Upload your PDF and convert it into audio instantly.</p>
+
+        <form action="/convert" method="POST" enctype="multipart/form-data">
+            <input type="file" name="pdf" accept=".pdf" required>
+            <button type="submit">Convert to Audio</button>
+        </form>
+    </div>
+
+</body>
+</html>
